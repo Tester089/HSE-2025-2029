@@ -13,3 +13,5 @@ endif()
 
 # Модуль 1
 add_subdirectory("2025-2026/module-1")
+# Модуль 2
+add_subdirectory("2025-2026/module-2")

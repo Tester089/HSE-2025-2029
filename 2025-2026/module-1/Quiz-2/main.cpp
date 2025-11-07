@@ -33,7 +33,7 @@ bool isEven(int x) {
 
 
 bool isGood(int x) {
-  return isEven(x) && isPositive(x);
+  return !isEven(x) && isPositive(x);
 }
 
 
@@ -64,9 +64,18 @@ int main() {
   write(&original, n);
   int someint = 0;
   std::vector<int> edited = filterArray(original, isGood, someint);
+
+  for (size_t i = 0; i < n; i++) {
+    for (auto black : edited) {
+      if (black == original[i]) {
+        original.erase(original.begin()+i);
+        i--;
+        n--;
+      }
+    }
+  }s
+
   print(&original);
   print(&edited);
-
-
 
 }
