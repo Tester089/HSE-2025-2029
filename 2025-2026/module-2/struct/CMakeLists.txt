@@ -1,3 +1,3 @@
-add_executable(module2_enum
+add_executable(module2_struct
         task1.cpp
 )

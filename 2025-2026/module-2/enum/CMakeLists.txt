@@ -5,4 +5,5 @@ add_executable(module2_enum
         task4.cpp
         task6.cpp
         task7.cpp
+        ../HW-1/main.cpp
 )
